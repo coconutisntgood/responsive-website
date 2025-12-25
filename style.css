@@ -35,6 +35,7 @@
   --font-size-h1 : var(--fs-42);
   --font-size-h2 : var(--fs-36);
   --font-size-h3 : var(--fs-24);
+  --font-size-fsize : var(--fs-24);
   
 
   @media (width >= calc(600/16 * 1rem)) {
@@ -42,6 +43,7 @@
     --font-size-h1 : var(--fs-72);
     --font-size-h2 : var(--fs-48);
     --font-size-par : var(--fs-28);
+    --font-size-fsize : var(--fs-24);
   }
 }
 
@@ -188,8 +190,7 @@ img, picture, svg {
       padding-block: 12px;
       padding-inline: 12px;
       color: var(--color-text-white);
-      flex-direction: column;    /* Stack vertically */
-      align-items: center;
+      flex-direction: column;    
       
 
       @media (width >= calc(600/16 * 1rem)) {
@@ -232,6 +233,7 @@ img, picture, svg {
     .hero__actions {
       display: flex;
       gap: 20px;
+      padding-bottom: 80px;
     }
 
     .btn-primary {
@@ -325,4 +327,87 @@ img, picture, svg {
     border: 1px solid;
 }
 }
+
+.features_wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 10px;
+  padding-inline: 2px;
+
+  @media (width >= calc(600/16 * 1rem)) {
+    flex-direction: row;
+    gap: 12rem;
+    padding-block: 80px;
+    padding-inline: 80px;
+  }
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+}
+
+
+.img_3 img {
+  max-width: 60px;
+
+  @media (width >= calc(600/16 * 1rem)) {
+    
+  }
+}
+.feature img {
+  max-width: 50px;
+  height: auto;
+
+  @media (width >= calc(600/16 * 1rem)) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.investment_wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-fullwidth-bg);
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 40px;
+  padding-inline: 30px;
+  width: 100%;
+
+  @media (width >= calc(600/16 * 1rem)) {
+    gap: 3rem;
+    padding-block: 60px;
+    padding-inline: 300px;
+  }
+}
+
+.investment h2 {
+  color : var(--color-text-white);
+  font-size: 30px;
+
+  @media (width >= calc(600/16 * 1rem)) {
+    font-size: 48px;
+  }
+}
+
+.investment p {
+  color : var(--color-text-white);
+  font-size: 16px;
+  font-weight: 100;
+
+  @media (width >= calc(600/16 * 1rem)) {
+    font-size: 24px;
+    font-weight: 100;
+  }
+}
+
 }
