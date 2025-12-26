@@ -21,6 +21,7 @@ Technologies utilisées :
 
 
 English -- english version 
+
 A landing page UI built from scratch, inspired by the Mythos design https://www.figma.com/design/RoCf7E2cvIzfzDaFgqO2C1/BASIC---Responsive-Website?node-id=0-1&p=f&t=UygFF5zowp1MJklz-0.
 This project is a frontend practice to improve layout, responsive design, and gradient styling skills.
 
