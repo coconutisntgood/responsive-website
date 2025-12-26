@@ -1,6 +1,7 @@
 # responsive-website
 
 Hibex Landing Page UI
+
 Français -- version en français
 
 Une page d’atterrissage UI créée de zéro, inspirée par le design de Mythos https://www.figma.com/design/RoCf7E2cvIzfzDaFgqO2C1/BASIC---Responsive-Website?node-id=0-1&p=f&t=UygFF5zowp1MJklz-0.
@@ -17,6 +18,7 @@ Technologies utilisées :
 - HTML5
 - CSS3 (Flexbox & Grid)
 - Design responsive et bonnes pratiques
+
 
 English -- english version 
 A landing page UI built from scratch, inspired by the Mythos design https://www.figma.com/design/RoCf7E2cvIzfzDaFgqO2C1/BASIC---Responsive-Website?node-id=0-1&p=f&t=UygFF5zowp1MJklz-0.
