@@ -52,6 +52,7 @@
 :root {
   --c-white : hsl(0, 0%, 100%);
   --c-grey-dark : hsl(233, 14%, 25%);
+  --c-dark-blue : hsl(233, 14%, 25%); 
   --c-blue : hsl(232, 58%, 55%); 
   --c-teal : hsl(180, 100%, 42%);
   --color-transparent : transparent;
@@ -67,6 +68,7 @@
   --color-button-secondary-bg : var(--color-transparent);
   --color-button-secondary-border : var(--c-white);
   --color-button-secondary-text : var(--c-white);
+  --color-button-third-text : var(--c-dark-blue); 
   --color-fullwidth-bg : var(--color-magenta);
 }
 
@@ -262,14 +264,12 @@ img, picture, svg {
       font-size: 12px;
       color : var(--color-button-secondary-text);
       border-radius: calc(999 / 16 * 1rem);
-      border-color: white;
       padding-inline: calc(12 / 16 * 1rem);
       letter-spacing: 0.05rem;
       text-transform: uppercase;
       background-color: var(--color-button-secondary-bg);
       border-color: var(--color-button-secondary-border);
       font-weight: 700;
-      text-transform: uppercase;
 
       &:hover {
         color : var(--color-hero-bg);
@@ -465,9 +465,76 @@ img, picture, svg {
     color: var(--c-grey-dark);
     font-weight: 100;
     font-size: 20px;
+    text-align: center;
 
     @media (width >= calc(600/16 * 1rem)) {
     font-size: 24px;
+    text-align: left;
   }
   }
+
+  .start__wrapper {
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    text-align: center;
+    padding-block: 100px;
+  }
+
+  .color_effect {
+  background: linear-gradient(
+    90deg,
+    #2f2a3d 0%,
+    #4f5bd5 50%,
+    #16c7d9 100%
+  );
+}
+
+  .start_content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color : var(--color-text-white);
+  }
+
+  .start h2 {
+    font-size: 32px;
+
+    @media (width >= calc(600/16 * 1rem)) {
+      font-size: 48px;
+  }
+  }
+
+  .start p {
+    font-size: 20px;
+
+    @media (width >= calc(600/16 * 1rem)) {
+      font-size: 24px;
+  }
+  }
+
+  .btn-third {
+    background-color: var(--c-white);
+    color : var(--color-button-third-text);
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: calc(999 / 16 * 1rem);
+    height: auto;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 130px;
+    height: 42px;
+
+    &:hover {
+      background-color: var(--color-button-secondary-text);
+      text-decoration-thickness: 1px;
+      border-color: #2f2a3d;
+      cursor: pointer;
+      box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.504);
+    }
+  }
+
 }
