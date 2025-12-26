@@ -155,14 +155,12 @@ img, picture, svg {
     }
 
     .topnav__logo {
-      width : calc(70/16 * 1rem);
+      width : calc(120/16 * 1rem);
 
       @media (width >= calc(600/16 * 1rem)) {
-        width : calc(128/16 * 1rem);
+        width : calc(170/16 * 1rem);
       }
     }
-
-    .topnav__item {}
 
     .topnav__link {
       font-size: var(--font-size-top-nav);
@@ -189,15 +187,15 @@ img, picture, svg {
       gap: 2rem;
       align-items: center;
       justify-content: space-between;
-      padding-block: 12px;
-      padding-inline: 12px;
+      padding-block: calc(12/16 * 1rem);
+      padding-inline: calc(12/16 * 1rem);
       color: var(--color-text-white);
       flex-direction: column;    
       
 
       @media (width >= calc(600/16 * 1rem)) {
-        padding-block: 80px;
-        padding-inline: 90px;
+        padding-block: calc(80/16 * 1rem);
+        padding-inline: calc(90/16 * 1rem);
         flex-direction: row;
         gap: 10rem;
          
@@ -215,20 +213,18 @@ img, picture, svg {
     .hero__content h1 {
       
       font-size: var(--font-size-h1);
-      padding-bottom: 10px;
+      padding-bottom: calc(10/16 * 1rem);
 
       @media (width >= calc(600/16 * 1rem)) {
-        padding-bottom: 20px;
+        padding-bottom: calc(20/16 * 1rem);
       }
     }
 
     .hero__content p {
 
       font-size: var(--fs-size-par);
-      padding-bottom: 20px;
+      padding-bottom: calc(20/16 * 1rem);
 
-      @media (width >= calc(600/16 * 1rem)) {
-        padding-bottom: 20px;
       }
     }
 
@@ -248,12 +244,14 @@ img, picture, svg {
       letter-spacing: 0.05rem;
       height : 37px;
       border-radius: calc(999 / 16 * 1rem);
+      border-color: transparent;
       text-transform: uppercase;
       border: none;
-      box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.707);
+      box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.607);
 
       &:hover {
         box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.904);
+        border: 1px solid var(--color-button-primary-text);
         cursor: pointer;
         
       }
@@ -268,21 +266,21 @@ img, picture, svg {
       letter-spacing: 0.05rem;
       text-transform: uppercase;
       background-color: var(--color-button-secondary-bg);
-      border-color: var(--color-button-secondary-border);
+      border: 2px solid var(--color-button-secondary-border);
       font-weight: 700;
 
       &:hover {
         color : var(--color-hero-bg);
         background-color: var(--color-button-secondary-text);
         text-decoration-thickness: 2px;
-        border: none;
+        border-color: transparent;
         cursor: pointer;
       }
 
     }
 
     .hero__image img {
-      width: 350px;  
+      width: calc(350/16 * 1rem);  
       height: auto;
       display: block;
       margin: 0;
@@ -290,8 +288,8 @@ img, picture, svg {
 
       @media (width >= calc(600/16 * 1rem)) {
         .hero__image img {
-          width: 1000px; 
-          max-width: 1000px;
+          width: calc(1000/16 * 1rem);
+          max-width: calc(1000/16 * 1rem);
         }
       }
     }
@@ -307,7 +305,7 @@ img, picture, svg {
   }
 
 
-}
+
 
 @layer utility {
   .visually-hidden {
@@ -334,14 +332,14 @@ img, picture, svg {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  padding-block: 10px;
-  padding-inline: 2px;
+  padding-block: calc(10/16 * 1rem);
+  padding-inline: calc(2/16 * 1rem);
 
   @media (width >= calc(600/16 * 1rem)) {
     flex-direction: row;
     gap: 12rem;
-    padding-block: 80px;
-    padding-inline: 80px;
+    padding-block: calc(80/16 * 1rem);
+    padding-inline: calc(80/16 * 1rem);
   }
 }
 
@@ -355,14 +353,14 @@ img, picture, svg {
 
 
 .img_3 img {
-  max-width: 60px;
+  max-width: calc(60/16 * 1rem);
 
   @media (width >= calc(600/16 * 1rem)) {
     
   }
 }
 .feature img {
-  max-width: 50px;
+  max-width: calc(50/16 * 1rem);
   height: auto;
 
   @media (width >= calc(600/16 * 1rem)) {
@@ -379,14 +377,14 @@ img, picture, svg {
   background-color: var(--color-fullwidth-bg);
   flex-direction: column;
   justify-content: space-between;
-  padding-block: 40px;
-  padding-inline: 30px;
+  padding-block: calc(40/16 * 1rem);
+  padding-inline: calc(30/16 * 1rem);
   width: 100%;
 
   @media (width >= calc(600/16 * 1rem)) {
     gap: 3rem;
-    padding-block: 60px;
-    padding-inline: 300px;
+    padding-block: calc(60/16 * 1rem);
+    padding-inline: calc(300/16 * 1rem);
   }
 }
 
@@ -414,32 +412,32 @@ img, picture, svg {
   gap: 2rem;
   flex-direction: column;
   justify-content: space-between;
-  padding-block: 10px;
-  padding-inline: 2px;
+  padding-block: calc(10/16 * 1rem);
+  padding-inline: calc(2/16 * 1rem);
 
   @media (width >= calc(600/16 * 1rem)) {
     gap: 2rem;
-    padding-block: 75px;
-    padding-inline: 322px;
+    padding-block: calc(75/16 * 1rem);
+    padding-inline: calc(322/16 * 1rem);
   }
 }
 
   #quote {
-   max-width: 52px;
+   max-width: calc(45/16 * 1rem);
    height: auto;
    
    @media (width >= calc(600/16 * 1rem)) {
-    max-width: 78px;
+    max-width: calc(78/16 * 1rem);
    }
   }
 
   .testimonial p {
     color : var(--color-text-dark);
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
 
   @media (width >= calc(600/16 * 1rem)) {
-    font-size: 36px;
+    font-size: 32px;
 
   }
 }
@@ -480,7 +478,7 @@ img, picture, svg {
     gap: 4rem;
     align-items: center;
     text-align: center;
-    padding-block: 100px;
+    padding-block: calc(100/16 * 1rem);
   }
 
   .color_effect {
@@ -525,8 +523,8 @@ img, picture, svg {
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     font-weight: 700;
-    width: 130px;
-    height: 42px;
+    width: calc(130/16 * 1rem);
+    height: calc(42/16 * 1rem);
 
     &:hover {
       background-color: var(--color-button-secondary-text);
@@ -537,4 +535,68 @@ img, picture, svg {
     }
   }
 
+  .footer__logo {
+      width : calc(120/16 * 1rem);
+      color: var(--c-grey-dark);
+
+      @media (width >= calc(600/16 * 1rem)) {
+        width : calc(170/16 * 1rem);
+      }
+    }
+
+  .footer p {
+    font-size: 18px;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-block: calc(60/16 * 1rem);
+    padding-inline: calc(10/16 * 1rem);
+
+    @media (width >= calc(600/16 * 1rem)) {
+      padding-inline: calc(168/16 * 1rem);
+    }
+  }
+
+  .company_information {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media (width >= calc(600/16 * 1rem)) {
+      flex-direction: row;
+      gap: 12rem;
+    }
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+
+    @media (width >= calc(600/16 * 1rem)) {
+      gap: 12rem;
+    }
+  }
+
+  .media {
+    display: flex;
+    flex-direction: row;
+    gap : 10px;
+  }
+
+  #title {
+    font-weight: 700;
+    font-size: calc(22/16 * 1rem);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap : calc(5/16 * 1rem);
+  }
+
+  
 }
