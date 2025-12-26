@@ -406,8 +406,68 @@ img, picture, svg {
 
   @media (width >= calc(600/16 * 1rem)) {
     font-size: 24px;
-    font-weight: 100;
   }
 }
 
+.testimonial__wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 10px;
+  padding-inline: 2px;
+
+  @media (width >= calc(600/16 * 1rem)) {
+    gap: 2rem;
+    padding-block: 75px;
+    padding-inline: 322px;
+  }
+}
+
+  #quote {
+   max-width: 52px;
+   height: auto;
+   
+   @media (width >= calc(600/16 * 1rem)) {
+    max-width: 78px;
+   }
+  }
+
+  .testimonial p {
+    color : var(--color-text-dark);
+    font-size: 24px;
+    font-weight: 700;
+
+  @media (width >= calc(600/16 * 1rem)) {
+    font-size: 36px;
+
+  }
+}
+  #moi {
+    border-radius: 50%; 
+    width: 120px;       
+    height: 120px;      
+    object-fit: cover;
+
+  }
+  
+  .user {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    @media (width >= calc(600/16 * 1rem)) {
+      flex-direction: row;
+  }
+  }
+  .user p {
+    color: var(--c-grey-dark);
+    font-weight: 100;
+    font-size: 20px;
+
+    @media (width >= calc(600/16 * 1rem)) {
+    font-size: 24px;
+  }
+  }
 }
